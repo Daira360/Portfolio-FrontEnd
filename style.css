@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, #221329, #754a84);
+    background-repeat: no-repeat;
+    font-family: "Fira Code", monospace;
+    font-weight: lighter;
+    color: #d9d9d9;
+    padding: 0 2em;
+}
+
+h1 {
+    font-size: 48px; 
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+/*clases generales*/
+.boton{
+    width: 50%;
+    color: #C778DD;
+    font-size: 14px;
+    font-weight: 500;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: #C778DD;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*intento de animación
+.boton:hover {
+    animation: boton 0.5s ease-in-out infinite alternate;
+}
+@keyframes boton {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+*/
+
+.item{
+    color: #C778DD;
+    margin: 0px 20px;
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    padding: 25px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+}
+
+.titulo h2::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    margin: 0px 20px;
+    margin-top: 25px;
+    background-color: #C778DD;
+}
+
+
+
+/*menú superior*/
+.cabecera{
+    width: 100%;
+    height: 100px;
+}
+
+.ancho{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+
+#logo{
+    width: 10%;
+    height: 100px;
+    float: left;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu{
+    width: 80%;
+    height: 100px;
+    float: left;
+    padding: 40px 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#menu li{
+    display: inline;
+}
+
+#menu a{
+    color: #d9d9d9;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+#menu a:hover{
+    color: #ba89d3;
+}
+
+#login{
+    width: 10%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*sobre mi*/
+.sobre_mi{
+    width: 100%;
+    height: 550px;
+    margin-block: 1em;
+}
+
+.ancho2{
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    position: relative;
+}
+
+#foto{
+    width: 35%;
+    height: 300px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#presentacion{
+    width: 100%;
+    height: 300px;
+    text-align: left;
+    padding: 100px 0;
+}
+
+#presentacion p{
+    margin-top: 10px;
+}
+
+#cv{
+    width: 35%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*educación*/
+.educacion{
+    width: 100%;
+    height: 450px;
+    display: flex;
+}
+
+.ancho3{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+/*proyecto(s)*/
+#proyectos{
+    width: 100%;
+    height: 400px;
+}
+    
+.ancho4{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+/*skills y más*/
+.skills{
+    width: 100%;
+    height: 400px;
+    
+}
+
+.ancho5{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+/*contacto*/
+.contacto{
+    width: 100%;
+    height: 600px;
+}
+
+.ancho6{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.contacto-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*más información de contacto*/
+.mas-info p{
+    padding: 3em;
+    text-align: center;
+}
+
+.mas-info ul{
+    text-align: center;
+    list-style: none;
+    padding: 0; 
+}
+
+.mas-info i{
+    color: #C778DD;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    transition-duration: 0.3s;
+}
+
+.mas-info li{
+    position: relative;
+}
+
+.redes i{
+    position: relative;
+    font-size: 40px;
+}
+
+/*formulario de contacto*/
+.formulario form{
+    margin: 0;
+    padding: 1em;
+}
+
+.formulario form input, textarea{
+    width: 100%;
+    padding: 1em;
+    background: hsla(287, 60%, 67%, 0.20);
+    border: 2px solid #C778DD;
+    outline: 0;
+    color: #d9d9d9;
+}
+
+.formulario button{
+    background: none;
+    padding: 1em;
+}
+
+
+
+/*pie de página*/
+#pie{
+    align-items: center;
+    text-align: center;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#pie p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*barra de scroll*/
+body::-webkit-scrollbar{
+    background-color: #754a84;
+    width: 15px;
+    opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg, #221329, #754a84);
+    border-radius: 100px;
+    border: 2px solid #754a84;
+}
