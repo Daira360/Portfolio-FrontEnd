@@ -20,6 +20,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="style.css">
         
         <!--Boobstrap-->
@@ -45,6 +46,7 @@
 
         <!---------------------------------------------------->
         <!--Barra de Navegación-->
+        
         <nav class="navbar navbar-expand-md fixed-top navbar-main">
             <!--Contenedor barra de navegación-->
             <div class="container">
@@ -54,14 +56,14 @@
                     <img src="img/Logo_argprog_2.png" width="130px" alt="Logo Argentina Programa">
                 </a>
                 
-                <!--Botón colapse-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <!--Btn-->
+                <button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Barra de navegación">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-
+                </button>
+                
                 <!--Barra de navegación-->
                 <div class="collapse navbar-collapse" id="menuNav">
-                    <div class="nav mx-auto">
+                    <div class="nav mx-auto flex-colum flex-lg-row">
                         <a class="nav-link active" href="#about">SOBRE MI</a>
                         <a class="nav-link" href="#edu">EDUCACIÓN</a>
                         <a class="nav-link" href="#proyect">PROYECTOS</a>
@@ -76,7 +78,7 @@
                 </button>
 
             </div>
-            <!--Contenedor barra de navegación-->
+            <!---->
         </nav>
         <!---------------------------------------------------->
 
@@ -97,15 +99,15 @@
             <!--Header-->
             <header class="row align-items-center header-main">
                 <!--Foto-->
-                <div class="col-1">
+                <div class="col-1 col-mx-4">
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 col-mx-4">
                     <!--Foto de perfil y CV-->
                     <div class="colum1 text-center">
                         <img src="img/Foto.png" width="350px" alt="Foto de perfil">
                         <button class="btn-1 cv">
-                            <span>Descargar CV</span>
+                            <a href="cv/#" class="text-decoration-none"><span>Descargar CV</span></a>
                         </button>
                     </div>
                 </div>
@@ -120,21 +122,21 @@
                    
                     <!--Redes Sociales-->
                     <div class="redes">
-                        <a href="https://www.instagram.com/hellsy.png/?hl=es-la" target="_blank">
+                        <a href="https://www.instagram.com/hellsy.png/?hl=es-la" class="text-decoration-none" target="_blank">
                             <i class="bx bxl-instagram-alt"></i>
                         </a>
         
-                        <a href=https://github.com/Daira360 target="_blank">
+                        <a href=https://github.com/Daira360 class="text-decoration-none" target="_blank">
                             <i class="bx bxl-github"></i>
                         </a>
 
-                        <a href=https://www.linkedin.com/in/daira-barreto-51a767253/ target="_blank">
+                        <a href=https://www.linkedin.com/in/daira-barreto-51a767253/ class="text-decoration-none" target="_blank">
                         <i class="bx bxl-linkedin-square"></i>
                         </a>
                     </div>
                 </div>
             </header>
-            <!--Header-->            
+            <!---->            
         </div>
         <!---------------------------------------------------->
             
@@ -154,7 +156,7 @@
         <!---------------------------------------------------->
         <!--Proyectos-->
         <section id="proyect" class="container"> 
-                <div class="ancho4">
+                <div class="titulo">
                     <div class="titulo">
                         <h2><span class="item">✦</span>Proyectos</h2>
                     </div>
@@ -179,65 +181,69 @@
         </section>          
         <!---------------------------------------------------->
 
+        <!--Fondo Footer-->
+        <div>
+            <img id="Fondo_pie" alt="Fondo_pie" src="img/Fondito.png">
+        </div>
 
 
         <!---------------------------------------------------->   
         <!--Contacto-->
-        <div id="contact" class="container">
-            <!---->
-            <section class="row justify-content-center">
-                <div class="text-center">
-                    <!--Texto-->
-                    <p>Si está interesado en trabajar conmigo,<br>no dude en ponerse en contacto.</br></p>
+        <section id="contact" class="container">
+            <!--Título-->                
+            <div class="titulo">
+                <h2><span class="item">✦</span>Contacto</h2>
+            </div>
+
+            <!--Información de Contacto-->
+            <div class="container text-center">
+
+                <!--Texto-->
+                <p>Si está interesado en trabajar conmigo en su próximo proyecto,<br>no dude en ponerse en contacto.</br></p>
                    
-                    <!--Gmail-->
-                    <div class="email container">
-                    <a href="mailto:barretodairatamara@gmail.com" class="h5 text-white text-decoration-none">
-                       <span>barretodairatamara@gmail.com</span>
+                <!--Gmail-->
+                <div class="container email">
+                    <a href="mailto:barretodairatamara@gmail.com" class="text-decoration-none">
+                        <h5 class="gmail">barretodairatamara@gmail.com</h5>
                     </a>
                 </div>
 
-                    <!--Gif Decorativo-->
-                    <div class="row justify-content-center text-center">
-                        <div class="col-6 gif">
-                            <img class="align-bottom" src="img/Loading_gato.gif" width="100px">
-                            <img src="img/Loading_yo.gif" width="100px">
+                <!--Gif-->
+                <div class="row justify-content-center text-center">
+                        <div class="gif">
+                            <img class="align-bottom" src="img/Loading_gato.gif" width="120px">
+                            <img src="img/Loading_yo.gif" width="120px">
                         </div>
-                    </div>
-
-                    <!--Redes-->
-                    <div class="redes">
-                        <a href="https://www.instagram.com/hellsy.png/?hl=es-la" target="_blank">
-                            <i class="bx bxl-instagram-alt"></i>
-                        </a>
-        
-                        <a href=https://github.com/Daira360 target="_blank">
-                            <i class="bx bxl-github"></i>
-                        </a>
-    
-                        <a href=https://www.linkedin.com/in/daira-barreto-51a767253/ target="_blank">
-                            <i class="bx bxl-linkedin-square"></i>
-                        </a>
-                    </div>
+                    </div>    
                     
-                </div>
-            </section>
-        
+                <!--Redes-->
+                <div class="redes">
+                    <a href="https://www.instagram.com/hellsy.png/?hl=es-la" class="text-decoration-none" target="_blank">
+                        <i class="zoom bx bxl-instagram-alt"></i>
+                    </a>
+    
+                    <a href=https://github.com/Daira360 class="text-decoration-none" target="_blank">
+                        <i class="bx bxl-github"></i>
+                    </a>
 
-            <!---------------------------------------------------->
-            <!--Navbar-->
-            
-        </div>
+                    <a href=https://www.linkedin.com/in/daira-barreto-51a767253/ class="text-decoration-none" target="_blank">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                </div>
+            </div>
+            <!---->
+        </section>
+        <!---------------------------------------------------->
         
-               
+        
 
         <!---------------------------------------------------->
         <!--Pie de página-->
         <footer class="text-center text-white-50 p-2">
             Hecho con ♡ por Daira <br>&#169; Copyright 2022 - Todos los derechos reservados.</br>
-        <!--Fondo Footer-->
         </footer>
         <!---------------------------------------------------->
+       
 
     </body>
     
