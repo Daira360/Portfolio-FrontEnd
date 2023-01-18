@@ -12,6 +12,7 @@ body{
 }
 
 
+/*---------------------------------------------------*/
 /*Banner*/
 #banner {
     width: 100%;
@@ -20,32 +21,7 @@ body{
     opacity: 40%;
     z-index: -1;
 }
-
-
 /*---------------------------------------------------*/
-/*Clases Generales*/
-.item{
-    color: #C778DD;
-    margin: 0px 20px;
-}
-
-.titulo{
-    width: 100%;
-    height: 8em;  
-}
-.titulo h2::after{
-    position: absolute;
-    width: 75%;
-    height: 4px;
-    margin: 0px 20px;
-    margin-top: 25px;
-    background-color: #C778DD;
-}
-
-.negrita {
-    font-weight: 700;
-}
-
 
 
 /*---------------------------------------------------*/
@@ -53,9 +29,10 @@ body{
 .navbar-main {
     background-color: hsla(283, 30%, 26%, 0.9);
 }
-#menuNav a{
+#menuNav a {
     color: #d9d9d9;
     font-size: 14px;
+    font-weight: 600;
     padding: 5px 25px;
     transition: all 400ms ease-out;
 }
@@ -63,12 +40,7 @@ body{
     color: #ba89d3;
 }
 
-/*login*/
-.log {
-    padding: 5px 25px;
-}
-
-/*Botón 1*/
+/*Botón*/
 .btn-1 {
     padding: 2px 35px;
     background: none;
@@ -86,19 +58,105 @@ body{
     background: hsla(280, 46%, 68%, 0.2);
 }
 
+/*Login - Ventana modal*/
+.log {
+    padding: 5px 25px;
+}
+/*Formulario*/
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: #331d3f;
+    box-shadow: 0 15px 25px rgba(36, 11, 51, 0.6);
+    z-index: 1;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.login-show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.login h2 {
+    margin: 20px 0 30px 0px;
+    color: #ba89d3;
+}
+
+/*Usuario - Contraseña*/
+.login .usuario {
+    position: relative;
+} 
+.login .usuario input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #d9d9d9;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    outline: none;
+    background: none;
+}
+
+/*Cerrar ventana*/
+.login-close,
+.login-close i{
+    margin-top: 10px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    transition: all 400ms ease-out;
+}
+.login-close i:hover {
+    transform: scale(1.3);
+}
+  
+/*Animación Usuario - Contraseña*/
+.login .usuario label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #d9d9d9;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.login .usuario input:focus ~ label,
+.login .usuario input:valid ~ label {
+  top: -25px;
+  left: 0;
+  color: #ba89d3;
+  font-size: 16px;
+}
+/*---------------------------------------------------*/
+
+
+
 
 /*---------------------------------------------------*/
 /*Sobre mi*/
+/*Header*/
 .header-main {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
-/*Columna-1*/
-.cv {
-    margin-top: 10px;
+@media only screen and (min-width: 376px) {
+    body{
+        margin-top: 20rem;
+    }
+    .header-main {
+        height: initial;
+    }
 }
 
-/*Columna-2 Redes*/
+/*Columna-2 Redes CV*/
 .redes i{
     --size: 50px;
     width: var(--size);
@@ -111,19 +169,27 @@ body{
     color: #C778DD;
 }
 
+.cv {
+    margin-top: 15px;
+}
+/*---------------------------------------------------*/
 
 
 /*---------------------------------------------------*/
 /*Educación*/
+/*---------------------------------------------------*/
+
 
 
 
 /*---------------------------------------------------*/
 /*Proyecto(s)*/
+/*---------------------------------------------------*/
 
 
 /*---------------------------------------------------*/
 /*Skills y más*/
+/*---------------------------------------------------*/
 
 
 /*---------------------------------------------------*/
@@ -139,6 +205,7 @@ body{
 .gif {
     margin: 1em;
 }
+/*---------------------------------------------------*/
 
 
 
@@ -150,18 +217,48 @@ body{
     position: absolute;
     z-index: -1;
 }
+/*---------------------------------------------------*/
 
+
+
+/*---------------------------------------------------*/
+/*Asistente¿?*/
+.asistente {
+    margin: 1em;
+}
+/*---------------------------------------------------*/
+
+
+/*---------------------------------------------------*/
+/*Separación de secciones y títulos*/
+.title {
+    font-weight: 700;
+    margin: 3em;
+    position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  width: 90%;
+  height: 5px;
+  background: linear-gradient(90deg, #4a2e55 0%, #C778DD 47%, #4a2e55 100%);
+  transform: translateX(-50%);
+}
+/*---------------------------------------------------*/
 
 
 /*---------------------------------------------------*/
 /*Barra de scroll*/
 body::-webkit-scrollbar{
-    background-color: #754a84;
+    background-color: #4a2e55;
     width: 15px;
     opacity: 0;
 }
 body::-webkit-scrollbar-thumb{
-    background: linear-gradient(120deg, #221329, #754a84);
-    border-radius: 100px;
-    border: 2px solid #754a84;
+    background: linear-gradient(120deg, #C778DD, #4a2e55);
+    border-radius: 10px;
 }
+/*---------------------------------------------------*/

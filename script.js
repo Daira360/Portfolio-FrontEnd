@@ -1,16 +1,24 @@
-$(document).ready(function() {
-    $('#item1').animate({
-       borderBottomWidth: '200px'}, 1000);
-    $('#item2').animate({
-       borderBottomWidth: '50px'}, 1000);
-    $('#item3').animate({
-       borderBottomWidth: '15px'}, 1000);
-    $('#item4').animate({
-       borderBottomWidth: '37.5px'}, 1000);
-    $('#item5').animate({
-       borderBottomWidth: '37.5px'}, 1000);
-    $('#item6').animate({
-       borderBottomWidth: '100px'}, 1000);
-    $('#item7').animate({
-       borderBottomWidth: '62.5px'}, 1000);
-  })
+/*Login*/
+const loginOpen = document.querySelector('.login-open');
+const login = document.querySelector('.login');
+const loginClose = document.querySelector('.login-close');
+
+loginOpen.addEventListener('click', (e)=>{
+    e.preventDefault();
+    login.classList.add('login-show');
+});
+
+loginClose.addEventListener('click', (e)=>{
+    e.preventDefault();
+    login.classList.remove('login-show');
+});
+
+
+
+/*Sonido - Click*/
+let sound = new Audio();
+sound.src = "./sounds/click1.mp3";
+
+/*Sonido - Gato*/
+let soundcat = new Audio();
+soundcat.src = "./sounds/cat_1.mp3";
