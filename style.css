@@ -46,25 +46,28 @@ body{
     background: none;
     border-style: solid;
     border-color: #ba89d3;
-    transition: all 400ms ease-out;
-}
-.btn-1 span{
     font-size: 14px;
     font-weight: bold;
     color: #ba89d3;
+    transition: all 400ms ease-out;
 }
 .btn-1:hover {
     transform: scale(0.98);
     background: hsla(280, 46%, 68%, 0.2);
 }
+/*---------------------------------------------------*/
 
-/*Login - Ventana modal*/
+
+
+/*---------------------------------------------------*/
+/*Ventana de Login*/
 .log {
     padding: 5px 25px;
+    z-index: 1;
 }
-/*Formulario*/
 .login {
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     width: 300px;
@@ -73,19 +76,37 @@ body{
     border-radius: 10px;
     background: #331d3f;
     box-shadow: 0 15px 25px rgba(36, 11, 51, 0.6);
-    z-index: 1;
-    opacity: 0.5;
     pointer-events: none;
 }
-
-.login-show{
-    opacity: 1;
-    pointer-events: unset;
-}
-
 .login h2 {
     margin: 20px 0 30px 0px;
     color: #ba89d3;
+}
+
+/*Visibilidad Login*/
+.login.show{
+    visibility: visible;
+    pointer-events: unset;
+}
+.container-login.show{
+    transform: scale(1);
+    opacity: 1;
+}
+.container-login{
+    display: inline-block;
+    align-items: center;
+    width: 90%;
+    max-width: 950px;
+    transform: scale(0.6);
+    opacity: 0;
+    transition: .3s ease all;
+}
+.login .show{
+    visibility: visible;
+}
+.container-login .show{
+    transform: scale(1);
+    opacity: 1;
 }
 
 /*Usuario - Contraseña*/
@@ -104,19 +125,6 @@ body{
     background: none;
 }
 
-/*Cerrar ventana*/
-.login-close,
-.login-close i{
-    margin-top: 10px;
-    font-size: 25px;
-    background: none;
-    border: none;
-    transition: all 400ms ease-out;
-}
-.login-close i:hover {
-    transform: scale(1.3);
-}
-  
 /*Animación Usuario - Contraseña*/
 .login .usuario label {
     position: absolute;
@@ -135,8 +143,21 @@ body{
   color: #ba89d3;
   font-size: 16px;
 }
-/*---------------------------------------------------*/
 
+/*Cerrar Login*/
+#close,
+#close {
+    margin-top: 10px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    transition: all 400ms ease-out;
+}
+#close:hover {
+    transform: scale(1.3);
+}
+
+/*---------------------------------------------------*/
 
 
 
@@ -145,15 +166,6 @@ body{
 /*Header*/
 .header-main {
     min-height: 100vh;
-}
-
-@media only screen and (min-width: 376px) {
-    body{
-        margin-top: 20rem;
-    }
-    .header-main {
-        height: initial;
-    }
 }
 
 /*Columna-2 Redes CV*/
