@@ -1,0 +1,8 @@
+$primary: #ba89d3;
+$btn-font-size: 14px;
+
+$theme-colors: (
+  "primary": $primary,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
