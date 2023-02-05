@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     color: #d9d9d9;
     font-family: 'Fira Code', monospace;
 }
@@ -8,47 +7,74 @@ body{
     background: url(img/Fondito.png);
     background-position: bottom;
     background-size: cover;
-    background: linear-gradient(120deg, #4a2e55, #4a2e55);
-}
-
-
-/*---------------------------------------------------*/
-/*Banner*/
-.banner {
-    position: absolute;
-    margin-top: 3em;
-    opacity: 30%;
-    z-index: -1;
+    background: linear-gradient(120deg, #331d3f, #331d3f);
 }
 /*---------------------------------------------------*/
+
 
 
 /*---------------------------------------------------*/
 /*Barra de navegación*/
 .navbar-main {
-    background-color: hsla(283, 30%, 26%, 0.9);
+    background-color: #331d3fc4;
 }
+.navbar-toggler {
+    border: none !important;
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.navbar-toggler:hover {
+    transition: all 400ms;
+    transform: scale(0.9);
+}
+
 #menuNav a {
     color: #d9d9d9;
     font-size: 14px;
     font-weight: 600;
     padding: 5px 25px;
-    transition: all 400ms ease-out;
+    margin: 5px;
+    transition: all 200ms ease-out;
 }
 #menuNav a:hover{
     color: #ba89d3;
 }
-.login-btn {
-    margin: 10px 25px;
+
+@media screen and (max-width: 991px){
+    #menuNav a{
+        border-left: 4px solid #ba89d3;
+        margin: 5px;
+    }
+    #menuNav a:hover {
+        background-color: #ba89d3;
+        color: #331d3f;
+        }
 }
 /*---------------------------------------------------*/
 
 
 
 /*---------------------------------------------------*/
-/*Ventana de Login*/
-
+/*Botón Principal*/
+.btn-1 {
+    background-color: #ba89d3;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 3px 15px;
+    transition: all 400ms ease-out;
+    color: #331d3f;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.btn-1:hover {
+    transform: scale(1.01);
+    background-color: hsla(287, 60%, 67%, 0.1);
+    border: 1px solid #C778DD;
+    color: #C778DD;
+}
 /*---------------------------------------------------*/
+
 
 
 /*---------------------------------------------------*/
@@ -67,7 +93,7 @@ body{
 .login .usuario input {
     width: 50%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 16px; 
     color: #d9d9d9;
     margin-bottom: 50px;
     border: none;
@@ -106,31 +132,56 @@ body{
 #close:hover {
     transform: scale(1.3);
 }
+/*---------------------------------------------------*/
 
+
+
+/*---------------------------------------------------*/
+/*Icons config*/
+.bx {
+    color: #ba89d3;
+    font-size: 35px;
+}
+.icon {
+    transition: all 400ms ease-out;
+    --size: 45px;
+    width: var(--size);
+}
+.icon:hover {
+    transform: scale(1.2);
+    color: #C778DD;
+}
 /*---------------------------------------------------*/
 
 
 
 /*---------------------------------------------------*/
 /*Sobre mi*/
+/*Banner*/
+.banner {
+    max-height: 800px;
+    min-height: 600px;
+    position: relative;
+    margin-top: 70px;
+}
+.banner::before {
+    content: "";
+    opacity: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Banner_px.png);
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 95%, 0% 80%);
+    z-index: -1;
+}
+
 /*Header*/
 .header-main {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 /*Columna-2 Redes CV*/
-.redes i{
-    --size: 50px;
-    width: var(--size);
-    font-size: 35px;
-    color: #ba89d3;
-    transition: all 400ms ease-out;
-}
-.redes i:hover{
-    transform: scale(1.1);
-    color: #C778DD;
-}
-
 .cv {
     margin-top: 15px;
 }
@@ -142,15 +193,71 @@ body{
 /*---------------------------------------------------*/
 
 
-
-
 /*---------------------------------------------------*/
 /*Proyecto(s)*/
 /*---------------------------------------------------*/
 
 
+
 /*---------------------------------------------------*/
-/*Skills y más*/
+/*Habilidades y Skills*/
+/*Título de sección*/
+.skills_container {
+    background-color: #4a2e55;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;   
+}
+.skills_header {
+    cursor: pointer;
+}
+.skills_title {
+    display: flex;
+    justify-content: space-between;
+}
+.skills_header h5 {
+    margin-top: 5px;
+}
+.skill_icon {
+    color: #ba89d3;
+    font-size: 35px;
+}
+
+/*Porcentaje - Skill*/
+.skill {
+    margin-top: 30px;
+}
+.skill_name {
+    display: flex;
+    margin-bottom: 10px;
+}
+.skill_name i {
+    font-size: 25px;
+}
+.skill_name h6 {
+    margin-top: 6px;
+}
+
+/*Barra de Porcentaje*/
+.skill_bar {
+    display: flex;
+
+}
+.skill_name {
+    height: 8px;
+    border-radius: .25rem;
+}
+.skill_bar span {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 15px;
+    margin: 10px 5px 10px 0;
+    background-color: #d9d9d9;
+}
+.skill_bar .active {
+    background-color: #C778DD;
+}
 /*---------------------------------------------------*/
 
 
@@ -162,6 +269,7 @@ body{
     transition: 400ms;
 }
 .email h5:hover {
+    transform: scale(1.08);
     color: #C778DD;
 }
 .gif {
@@ -186,10 +294,7 @@ body{
 
 
 /*---------------------------------------------------*/
-/*Asistente¿?*/
-.asistente {
-    margin: 1em;
-}
+
 /*---------------------------------------------------*/
 
 
@@ -197,7 +302,7 @@ body{
 /*Separación de secciones y títulos*/
 .title {
     font-weight: 700;
-    margin: 3em;
+    margin: 5em 0 2em 0;
     position: relative;
 }
 
@@ -214,15 +319,16 @@ body{
 /*---------------------------------------------------*/
 
 
+
 /*---------------------------------------------------*/
 /*Barra de scroll*/
 body::-webkit-scrollbar{
-    background-color: #4a2e55;
-    width: 15px;
+    background-color: #331d3f;
+    width: 10px;
     opacity: 0;
 }
 body::-webkit-scrollbar-thumb{
     background: linear-gradient(120deg, #C778DD, #4a2e55);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 /*---------------------------------------------------*/
