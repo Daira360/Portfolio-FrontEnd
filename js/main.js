@@ -17,3 +17,14 @@ skillsclose.onclick = () => {
     skillsclose.classList.toggle("bx-chevron-up");
 }
 
+
+/*Tooltip - Skills*/
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
+/*Carrucel - Proyectos*/
+$('.carousel').carousel({
+  interval: 2000
+})

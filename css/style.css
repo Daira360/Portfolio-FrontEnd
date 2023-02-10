@@ -56,7 +56,8 @@ body{
 
 
 /*---------------------------------------------------*/
-/*Botón Principal*/
+/*Botones*/
+/*Principal*/
 .btn-1 {
     background-color: #ba89d3;
     border: 1px solid transparent;
@@ -73,6 +74,22 @@ body{
     border: 1px solid #C778DD;
     color: #C778DD;
 }
+
+/*Secundario*/
+.btn-2 {
+    margin-top: 5px;
+    background: none;
+    border: none;
+    transition: all 400ms ease-out;
+}
+.btn-2 p {
+    color: #ba89d3;
+    font-weight: bold;
+}
+.btn-2:hover {
+    transform: scale(1.05);
+}
+
 /*---------------------------------------------------*/
 
 
@@ -140,12 +157,13 @@ body{
 /*Icons config*/
 .bx {
     color: #ba89d3;
-    font-size: 35px;
+    font-size: 25px;
 }
 .icon {
-    transition: all 400ms ease-out;
+    font-size: 35px;
     --size: 45px;
     width: var(--size);
+    transition: all 400ms ease-out;
 }
 .icon:hover {
     transform: scale(1.2);
@@ -190,12 +208,29 @@ body{
 
 /*---------------------------------------------------*/
 /*Educación*/
+.edu_container {
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: #4a2e55;
+    transition: all 400ms ease-out;
+}
+.edu_container:hover {
+    transform: scale(1.02);
+}
+.edu_container p {
+    margin: 0px;
+}
+.edu_container h5,
+.fecha p {
+    margin: 2px 5px 5px 5px;
+}
+.fecha {
+    margin-top: 5px;
+}
 /*---------------------------------------------------*/
 
 
-/*---------------------------------------------------*/
-/*Proyecto(s)*/
-/*---------------------------------------------------*/
 
 
 
@@ -206,59 +241,85 @@ body{
     background-color: #4a2e55;
     margin: 1em;
     padding: 1em;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 .skills_header {
     cursor: pointer;
 }
-.skills_title {
-    display: flex;
-    justify-content: space-between;
-}
 .skills_header h5 {
-    margin-top: 5px;
-}
-.skill_icon {
-    color: #ba89d3;
-    font-size: 35px;
+    margin-top: 6px;
 }
 
 /*Porcentaje - Skill*/
-.skill {
-    margin-top: 30px;
-}
-.skill_name {
-    display: flex;
-    margin-bottom: 10px;
-}
 .skill_name i {
-    font-size: 25px;
+    font-size: 30px;
 }
-.skill_name h6 {
-    margin-top: 6px;
+.skill_name p {
+    margin-top: 15px;
 }
 
 /*Barra de Porcentaje*/
 .skill_bar {
     display: flex;
-
-}
-.skill_name {
-    height: 8px;
-    border-radius: .25rem;
+    margin-bottom: 30px;
 }
 .skill_bar span {
-    display: flex;
-    justify-content: space-between;
-    width: 40px;
+    width: 70px;
     height: 15px;
-    margin: 10px 5px 10px 0;
+    margin-left: 5px;
     background-color: #d9d9d9;
+    transition: all 400ms ease-out;
 }
 .skill_bar .active {
     background-color: #C778DD;
 }
+.skill_bar span:hover {
+    transform: scale(1.08);
+}
+
+/*Btn - Plus*/
+.btn-icon {
+    border: none !important;
+}
+.btn-icon:hover {
+    transition: all 400ms ease-out;
+    transform: scale(1.1);
+    color: #C778DD;
+}
 /*---------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------*/
+/*Proyecto(s)*/
+.proyects_nav {
+    margin-bottom: 1em;
+}
+
+.proyect_item {
+    padding: 5px 15px;
+    margin-bottom: 1em;
+    cursor: pointer;
+    color: #C778DD;
+}
+.proyect_item:hover {
+    border-radius: 10px;
+    background-color: #C778DD;
+    color: #331d3f;
+}
+
+/*Primer proyecto*/
+.container_proyect {
+    margin: 1em;
+    background-color: #4a2e55;
+    border-radius: 10px;
+    padding: 2em;
+}
+/*---------------------------------------------------*/
+
+
+
 
 
 /*---------------------------------------------------*/
@@ -283,7 +344,7 @@ body{
 /*Fondo*/
 #fondito {
     position: absolute;
-    top: 93em;
+    top: 158em;
     width: 100%;
     opacity: 50%;
     position: absolute;
@@ -302,10 +363,14 @@ body{
 /*Separación de secciones y títulos*/
 .title {
     font-weight: 700;
-    margin: 5em 0 2em 0;
+    margin-top: 5em;
     position: relative;
 }
-
+.subtitle {
+    color: #d9d9d980;
+    font-size: 14px;
+    margin: 0em 0em 3em;
+}
 .title::before {
   content: "";
   position: absolute;

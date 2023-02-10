@@ -29,15 +29,13 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
     </head>
 
 
     <body>
 
         <!---------------------------------------------------->
-        <!--Barra de Navegación-->
+        <!------- Barra de Navegación ------->
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-main">
             <div class="container navbar-container">
                 
@@ -55,31 +53,31 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <!--Menú-->
                     <ul class="navbar-nav mx-auto" id="menuNav">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#about">SOBRE MI</a>
-                      </li>
-      
-                      <li class="nav-item">
-                          <a class="nav-link" href="#edu">EDUCACIÓN</a>
-                      </li>
-      
-                      <li class="nav-item">
-                          <a class="nav-link" href="#proyects">PROYECTOS</a>
-                      </li>
-      
-                      <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">SOBRE MI</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#edu">EDUCACIÓN</a>
+                        </li>
+  
+                        <li class="nav-item">
                           <a class="nav-link" href="#skills">SKILLS</a>
-                      </li>
-      
-                      <li class="nav-item">
-                          <a class="nav-link" href="#contact">CONTACTO</a>
-                      </li>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyects">PROYECTOS</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACTO</a>
+                        </li>
                     </ul>
                     <!---->
                 </div>
 
                 <!--Login Button-->
-                <button class="btn-1 login-btn" onclick="sound.play()" data-bs-toggle="modal" data-bs-target="#myModal" style="margin: 10px 0px 10px 25px;">
+                <button class="btn-1 login-btn" onclick="sound.play()" data-bs-toggle="modal" data-bs-target="#modal-login" style="margin: 10px 0px 10px 25px;">
                     LOGIN
                 </button>
                 <!----> 
@@ -90,8 +88,9 @@
 
 
 
-        <!--Login-->
-        <div class="modal fade" id="myModal">
+        <!---------------------------------------------------->
+        <!------- Login ------->
+        <div class="modal fade" id="modal-login">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
           
@@ -133,8 +132,8 @@
         
 
         <!---------------------------------------------------->
-        <!--Sobre mi-->
-        <section id="about" class="banner">
+        <!------- Sobre mi ------->
+        <section class="banner" id="about">
             <!--Header-->
             <header class="container">
                 <!--Foto-->
@@ -176,172 +175,471 @@
     
                         <!--CV-->
                         <div class="text-center text-md-start">
-                            <a href="img/cv.pdf" target="_blank" class="txt text-decoration-none">
+                            <a download="" href="img/cv.pdf" target="_blank" class="txt text-decoration-none">
                                 <button class="btn-1 cv" onclick="sound.play()">
                                     DESCARGAR CV
                                 </button>
                             </a>
                         </div>
                     </div>
-
                 </div>
-                
-                </div>
+                <!----> 
             </header>
             <!---->            
         </section>
-        <!---------------------------------------------------->
 
+        <div class="container">
+            <!--Título-->
+            <div class="text-center edu"> 
+                <h3 class="title">Sobre mi</h3>
+                <p class="subtitle">about me</p>
+            </div>
+
+
+        </div>
+        <!---------------------------------------------------->
+        
 
         
         <!---------------------------------------------------->
-        <!--Educación-->
+        <!------- Educación ------->
         <section class="container" id="edu">
+            <!--Título-->
             <div class="text-center edu"> 
                 <h3 class="title">EDUCACIÓN</h3>
+                <p class="subtitle">qualification</p>
             </div>
-
-            <div class="qualification__container container">
-                <div class="qualification__tabs">
-                  <div class="qualification__button button--flex qualification__active">
-                    <i class="bx bx-graduation qualification__icon"></i>
-                    Education
-                  </div>
-                  <div class="qualification__button button--flex">
-                    <i class="bx bx-briefcase icon"></i>
-                    Work
-                  </div>
+              
+            <!-- Educación - 1-->
+            <div class="edu_container">
+                <!-- Curso - Carrera -->
+                <div class="d-flex">
+                    <i class='bx bxs-graduation'></i>
+                    <h5><strong>Full-stack developer Jr.</strong></h5>
                 </div>
                 
-                <div class="qualification__sections">
-                    <!-- QUALIFICATION CONTENT 1 -->
-                    <div class="qualification__content qualification__active ">
-                        <!-- QUALIFICATION 1 -->
-                        <div class="qualification__data">
-                            <div>
-                              <h3 class="qualification__title">Computer Enginner</h3>
-                              <span class="qualification__subtitle">sss - University</span>
-                              <div class="qualification__calender">
-                                <i class="bx bx-calendar qualification__icon"></i>
-                                2009 - 2014
-                              </div>
-                            </div>
+                <!-- Entidad -->
+                <p>Argentina programa</p>
+
+                <!-- Fecha - Curso -->
+                <div class="fecha d-flex">
+                    <i class="bx bx-calendar"></i>
+                    <p>2022 - 2023</p>
+                </div>
+
+                <!-- Más - Info -->
+                <button class="btn-2 d-flex">
+                    <p>Ver más</p>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </button>
+            </div>
             
-                            <div>
-                              <span class="qualification__rounder"></span>
-                              <span class="qualification__line"></span>
+        </section>
+        <!---------------------------------------------------->
+    
+
+    
+        <!---------------------------------------------------->
+        <!------- Habilidades y Skills ------->
+        <section class="container" id="skills">
+            <!-- Título -->
+            <div class="text-center"> 
+                <h3 class="title">SKILLS</h3>
+                <p class="subtitle">about me</p>
+            </div>
+
+            <!-- Skills -->
+            <div class="row justify-content-center">
+
+                <!-- Skills FrontEnd -->
+                <div class="col-md-4 col-10 skills_container">
+                    <!-- FrontEnd Título -->  
+                    <div class="skills_header"> 
+                        <div class="d-flex justify-content-between mb-3" data-bs-toggle="collapse" href="#collapseOne">
+                            <i class="bx bx-code-alt skill_icon" style="margin-right: 1rem;"></i>
+                            <h5>FrontEnd</h5>
+                            <i id="skills_close" class="bx bx-chevron-down skill_icon" style="margin-left: 1rem;"></i>
+                        </div>
+                    </div> 
+
+                    <!-- FrontEnd Programs -->
+                    <div class="container collapse show" id="collapseOne" data-bs-parent="#accordion">
+
+                        <!-- HTML -->
+                        <div>
+                            <!-- Título -->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-html5'></i>
+                                <p>HTML</p>
+
+                                <!-- Btn plus - Más info -->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!-- Barra de Progreso -->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
                             </div>
                         </div>
+
+                        <!-- CSS -->
+                        <div>
+                            <!-- Título -->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-css3'></i>
+                                <p>CSS</p>
+
+                                <!-- Btn plus - Más info -->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!-- Barra de Progreso -->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div>
+                            <!-- Título -->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-javascript'></i>
+                                <p>JavaScript</p>
+
+                                <!-- Btn plus - Más info -->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!-- Barra de Progreso -->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!-- Modal plus - Más info -->
+                        <div class="modal fade" id="modal-plus">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                          
+                                    <!--Modal Header-->
+                                    <div class="modal-header login">
+                                        <h4>Más información</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                              
+                                    <!--Modal body-->
+                                    <div class="modal-body login">
+
+                                        <!--HTML-->
+                                        <div>
+                                            <h5>HTML</h5>
+                                        </div>
+
+                                        <!--CSS-->
+                                        <div>
+                                            <h5>CSS</h5>
+                                        </div>
+                                        
+
+                                        <!--JavaScript-->
+                                        <div>
+                                            <h5>JavaScript</h5>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+                
+                <!-- Skills BackEnd -->
+                <div class="col-md-4 col-10 skills_container">
+                    <!-- FrontEnd Título -->  
+                    <div class="skills_header"> 
+                        <div class="d-flex justify-content-between mb-3" data-bs-toggle="collapse" href="#collapseOne">
+                            <i class="bx bx-code-alt" style="margin-right: 1rem;"></i>
+                            <h5>BackEnd</h5>
+                            <i id="skills_close" class="bx bx-chevron-down skill_icon" style="margin-left: 1rem;"></i>
+                        </div>
+                    </div> 
+
+                    <!-- BackEnd Programs -->
+                    <div class="container collapse show" id="collapseOne" data-bs-parent="#accordion">
+
+                        <!--HTML-->
+                        <div class="skill html">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-html5'></i>
+                                <p>HTML</p>
+
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!--CSS-->
+                        <div class="skill css">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-css3'></i>
+                                <p>CSS</p>
+
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!--JavaScript-->
+                        <div class="skill js">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-javascript'></i>
+                                <p>JavaScript</p>
+
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!--Modal plus - Más info-->
+                        <div class="modal fade" id="modal-plus">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                          
+                                    <!--Modal Header-->
+                                    <div class="modal-header login">
+                                        <h4>Más información</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                              
+                                    <!--Modal body-->
+                                    <div class="modal-body login">
+
+                                        <!--HTML-->
+                                        <div>
+                                            <h5>HTML</h5>
+                                        </div>
+
+                                        <!--CSS-->
+                                        <div>
+                                            <h5>CSS</h5>
+                                        </div>
+                                        
+
+                                        <!--JavaScript-->
+                                        <div>
+                                            <h5>JavaScript</h5>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
                     </div>
                 </div>
 
+                <!-- Skills Design -->
+                <div class="col-md-4 col-10 skills_container">
+                    <!-- Design Título -->  
+                    <div class="skills_header"> 
+                        <div class="d-flex justify-content-between mb-3" data-bs-toggle="collapse" href="#collapseOne">
+                            <i class="bx bx-code-alt simple_icon" style="margin-right: 1rem;"></i>
+                            <h5>Design</h5>
+                            <i id="skills_close" class="bx bx-chevron-down skill_icon" style="margin-left: 1rem;"></i>
+                        </div>
+                    </div> 
 
-            <div>
-            </div>
-        </section>
-        <!---------------------------------------------------->
-    
+                    <!-- Design Programs -->
+                    <div class="container collapse show" id="collapseOne" data-bs-parent="#accordion">
 
+                        <!--HTML-->
+                        <div class="skill html">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
 
-        <!---------------------------------------------------->
-        <!--Proyectos-->
-        <section class="container" id="proyects">
-            <div class="text-center proyects"> 
-                <h3 class="title">PROYECTOS</h3>
-                
-            </div>
-        </section>
-        <!---------------------------------------------------->
-    
+                                <i class='bx bxl-html5'></i>
+                                <p>HTML</p>
 
-    
-        <!---------------------------------------------------->
-        <!--Habilidades y Skills-->
-        <section class="container" id="skills">
-            <div class="text-center"> 
-                <!--Título-->
-                <h3 class="title">SKILLS</h3>
-
-                <div class="row justify-content-center">
-                    <!--Skills FrontEnd-->
-                    <div class="col-4 skills_container">
-                        <!--FrontEnd Título-->  
-                        <div class="skills_header"> 
-                            <div class="skills_title" data-bs-toggle="collapse" href="#collapseOne">
-                                <i class="bx bx-code-alt skill_icon" style="margin-right: 1rem;"></i>
-                                <h5>FrontEnd Development</h5>
-                                <i id="skills_close" class="bx bx-chevron-down skill_icon" style="margin-left: 1rem;"></i>
-                            </div>
-                        </div> 
-
-                        <!--FrontEnd Programs-->
-                        <div class="container collapse show" id="collapseOne" data-bs-parent="#accordion">
-                            <!--HTML-->
-                            <div class="skill html">
-                                <!--Programa-->
-                                <div class="skill_name align-items-center">
-                                    <i class='bx bxl-html5'></i>
-                                    <h6>HTML</h6>
-                                </div>
-
-                                <!--Barra de Progreso-->
-                                <div class="container skill_bar">
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
                                 </div>
                             </div>
 
-                            <!--CSS-->
-                            <div class="skill css">
-                                <!--Programa-->
-                                <div class="skill_name align-items-center">
-                                    <i class='bx bxl-css3'></i>
-                                    <h6>CSS</h6>
-                                </div>
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
 
-                                <!--Barra de Progreso-->
-                                <div class="container skill_bar">
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
+                        <!--CSS-->
+                        <div class="skill css">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-css3'></i>
+                                <p>CSS</p>
+
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
                                 </div>
                             </div>
 
-                            <!--JavaScript-->
-                            <div class="skill JS">
-                                <!--Programa-->
-                                <div class="skill_name align-items-center">
-                                    <i class='bx bxl-javascript'></i>
-                                    <h6>JavaScript</h6>
-                                </div>
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
 
-                                <!--Barra de Progreso-->
-                                <div class="container skill_bar">
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 active"></span>
-                                    <span class="rounded-1 "></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
-                                    <span class="rounded-1"></span>
+                        <!--JavaScript-->
+                        <div class="skill js">
+                            <!--Título-->
+                            <div class="container skill_name d-flex align-items-center">
+
+                                <i class='bx bxl-javascript'></i>
+                                <p>JavaScript</p>
+
+                                <!--Btn plus - Más info-->
+                                <div class="flex-grow-1 text-end">
+                                    <button class="btn btn-icon" data-bs-toggle="modal" data-bs-target="#modal-plus">
+                                        <i class='bx bx-plus'></i>
+                                    </button>    
+                                </div>
+                            </div>
+
+                            <!--Barra de Progreso-->
+                            <div class="container justify-content-center skill_bar">
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Básico"></span>
+                                <span class="rounded-1 active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pricipiante"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Intermedio"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profesional"></span>
+                                <span class="rounded-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Experto"></span>
+                            </div>
+                        </div>
+
+                        <!--Modal plus - Más info-->
+                        <div class="modal fade" id="modal-plus">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                          
+                                    <!--Modal Header-->
+                                    <div class="modal-header login">
+                                        <h4>Más información</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                              
+                                    <!--Modal body-->
+                                    <div class="modal-body login">
+
+                                        <!--HTML-->
+                                        <div>
+                                            <h5>HTML</h5>
+                                        </div>
+
+                                        <!--CSS-->
+                                        <div>
+                                            <h5>CSS</h5>
+                                        </div>
+                                        
+
+                                        <!--JavaScript-->
+                                        <div>
+                                            <h5>JavaScript</h5>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!---->
                     </div>
-                    
-                    <!--Skills BackEnd-->
-
-                    
-                    <!--Skills Designer-->
+                </div>
 
             </div>
             <!---->
@@ -350,36 +648,110 @@
 
 
 
-        <!---------------------------------------------------->   
-        <!--Contacto-->
-        <section class="container" id="contact">
-            <!--Título-->                
-            <div class="text-center contact">
-                <h3 class="title">CONTACTO</h3>
+        <!---------------------------------------------------->
+        <!------- Proyectos ------->
+        <section class="container" id="proyects">
+            <div class="text-center proyects"> 
+                <h3 class="title">PROYECTOS</h3>
+                <p class="subtitle">my works</p>
             </div>
 
-            <!--Información de Contacto-->
+            <!-- Primer proyecto -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-5 col-10 container_proyect">
+                    <a href="#"><img src="img/foto.png" class="portfolio_img" width="200px"></a>
+                    <div class="portfolio_data">
+                        <span class="portfolio_sub">Web development</span>
+                        <h3 class="portfolio_title">New Portfolio BLABLABLABLA</h3>
+                        <button class="btn-1">DETALLES</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Carrusel de Proyectos -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+
+                <!-- Carrusel - 1 -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Banner_px.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                      <button class="btn-1">DETALLES</button>
+                    </div>
+                  </div>
+
+                  <!-- Carrusel - 2 -->
+                  <div class="carousel-item">
+                    <img src="img/Banner_px.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                      <button class="btn-1">DETALLES</button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Previous -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <!-- Next -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+              </div>
+
+            
+
+
+        </section>
+        <!---------------------------------------------------->
+
+
+
+        <!---------------------------------------------------->   
+        <!------- Contacto ------->
+        <section class="container" id="contact">
+            <!-- Título -->                
+            <div class="text-center">
+                <h3 class="title">CONTACTO</h3>
+                <p class="subtitle">contact me</p>
+            </div>
+
+            <!-- Información de Contacto -->
             <div class="container text-center">
 
-                <!--Texto-->
+                <!-- Texto -->
                 <p>Si está interesado en trabajar conmigo en su próximo proyecto,<br>no dude en ponerse en contacto.</br></p>
                    
-                <!--Gmail-->
+                <!-- Gmail -->
                 <div class="email">
                     <a href="mailto:barretodairatamara@gmail.com" class="text-decoration-none text-break">
                         <h5>barretodairatamara@gmail.com</h5>
                     </a>
                 </div>
 
-
-
-                <!--Gif-->
+                <!-- Gif -->
                 <div class="gif">
                         <img class="align-bottom" src="img/Loading_gato.gif" width="110px">
                         <img src="img/Loading_yo.gif" width="90px">
                 </div>    
                     
-                <!--Redes-->
+                <!-- Redes -->
                 <div class="redes">
                     <a href="https://www.instagram.com/hellsy.png/?hl=es-la" class="text-decoration-none" target="_blank">
                         <i class="bx bxl-instagram-alt icon"></i>
@@ -401,7 +773,7 @@
         
 
         <!---------------------------------------------------->
-        <!--Pie de página-->
+        <!------- Pie de página ------->
         <footer class="text-center text-white-50 p-2">
             Hecho con ♡ por Daira <br>&#169; Copyright 2022 - Todos los derechos reservados.</br>
         </footer>
@@ -411,19 +783,18 @@
         
         <!---------------------------------------------------->
         <img src="img/Fondito.png"  width="100%" id="fondito">
-       
-        <img src="" id="stars">
         <!---------------------------------------------------->
         
 
-        <!---------------------------------------------------->
-        <!--Home - Volver al inicio-->
 
         <!---------------------------------------------------->
+        <!------- Home - Volver al inicio ------->
+        <!---------------------------------------------------->
 
-        <!-- JS -->
+
+        <!------- JS ------->
         <script src="/js/main.js"></script>
-        <script src="/js/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!---------------------------------------------------->
 
     </body>
