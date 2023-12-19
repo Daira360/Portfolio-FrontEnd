@@ -5,7 +5,7 @@ Tienda en línea Funkoshop. Venta de figuras coleccionables Funko Pop! originale
 _[!NOTE]_
 Este es un proyecto como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸
 
-### ⚙️ Lenguajes Utilizados:
+### ⚙️ LENGUAJES UTILIZADOS:
 ***
 - HTML
 - CSS
@@ -16,7 +16,7 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
     - EJS
 
 
-### 👨‍💻 Integrantes:
+### 👨‍💻 INTEGRANTES:
 ***
 - Daira	Barreto
 - Carla	Flores
@@ -24,9 +24,9 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
 
 
 
-## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+## Technologies
+***
+A list of technologies used within the project:
+* [Technologie name](https://example.com): Version 12.3 
+* [Technologie name](https://example.com): Version 2.34
+* [Library name](https://example.com): Version 1234
