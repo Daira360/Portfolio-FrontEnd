@@ -32,6 +32,7 @@ $ npm start
 - Carla	Flores
 - Sasha Nahuel	Rocha
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](public/Assets/Img/branding/logo_light_horizontal.svg)
+!(public/Assets/Img/branding/logo_light_horizontal.svg)
 
 
+![!NOTE](Hola)
