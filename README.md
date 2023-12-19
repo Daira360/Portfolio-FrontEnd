@@ -2,7 +2,7 @@
 
 **Tienda en línea Funkoshop. Venta de figuras coleccionables Funko Pop!.**
 
-> [!NOTA]
+> [!NOTE]
 > Este es un proyecto desarrollado como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸
 
 ***
