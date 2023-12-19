@@ -2,7 +2,8 @@
 
 **Tienda en línea Funkoshop. Venta de figuras coleccionables Funko Pop!.**
 
-[!NOTE] (Este es un proyecto desarrollado como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸)
+> [!NOTE]
+> (Este es un proyecto desarrollado como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸)
 
 ***
 
@@ -40,11 +41,3 @@ $ npm start
 
 
 [!NOTE](Hola)
-
-
-
-## Insignias
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Las insignias en sí mismas no son necesarias, pero demuestran un crédito callejero. Las insignias permiten a otros desarrolladores saber que usted sabe lo que está haciendo. Eche un vistazo a las insignias presentadas por [shields.io](https://shields.io/). Es posible que no comprenda lo que todas ellas representan ahora, pero lo comprenderá con el tiempo.
