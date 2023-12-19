@@ -2,7 +2,7 @@
 ***
 Tienda en línea Funkoshop. Venta de figuras coleccionables Funko Pop!.
 
-_[!NOTE]_
+[!NOTE]
 Este es un proyecto como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸
 
 #### ⚙️ LENGUAJES UTILIZADOS
@@ -26,11 +26,9 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
 #### 🛠️ INSTALACIÓN 
 ***
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
+$ git clone https://github.com/Daira360/Proyecto_CodoaCodo.git
 $ npm start
 ```
-
-##### Data Base: 
+Data Base: 
 - instalar XAMPP en el ordenador
-- Iniciar servidores Apache y MySQL, crear una nueva base funkoshop_g4 e  importar ```lorem ipsum``` para su funcionamiento.
+- Iniciar servidores Apache y MySQL, crear una nueva base funkoshop_g4 e importar ```lorem ipsum``` para su funcionamiento.
