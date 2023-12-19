@@ -32,7 +32,7 @@ $ npm start
 - Carla	Flores
 - Sasha Nahuel	Rocha
 
-!(public/Assets/Img/branding/logo_light_horizontal.svg)
+![](public/Assets/Img/branding/logo_light_horizontal.svg)
 
 
-![!NOTE](Hola)
+[!NOTE](Hola)
