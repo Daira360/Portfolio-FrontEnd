@@ -9,11 +9,11 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
 ***
 - HTML5 
 - CSS5
-    - Flex
-    - Grid
-    - Bootstrap
+  - Flex
+  - Grid
+  - Bootstrap
 - JavaScript
-    - EJS
+  - EJS
 
 
 ### 👨‍💻 INTEGRANTES
