@@ -1,11 +1,11 @@
-### 🚀 FUNKOSHOP
+## 🚀 FUNKOSHOP
 ***
 Tienda en línea Funkoshop. Venta de figuras coleccionables Funko Pop! originales.
 
 _[!NOTE]_
 Este es un proyecto como parte del challenge integrador para el curso de NodeJS del Programa Codo a Codo 4.0 🛸
 
-### ⚙️ LENGUAJES UTILIZADOS
+## ⚙️ LENGUAJES UTILIZADOS
 ***
 - HTML5 
 - CSS5
@@ -16,10 +16,20 @@ Este es un proyecto como parte del challenge integrador para el curso de NodeJS 
   - EJS
 
 
-### 👨‍💻 INTEGRANTES
+## 👨‍💻 INTEGRANTES
 ***
 - Daira	Tamara Barreto
 - Carla	Flores
 - Sasha Nahuel	Rocha
 
 
+## 🛠️ INSTALACIÓN DEL REPOSITORIO 
+***
+A little intro about the installation. 
+```
+$ git clone https://example.com
+$ cd ../path/to/the/file
+$ npm install
+$ npm start
+```
+Side information: To use the application in a special environment use ```lorem ipsum``` to start
